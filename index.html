@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>&nbsp总是我给你写你不给我写的一封情书&nbsp&nbsp</title>
+        <link href="image/logo.ico" rel="icon" type="image/x-ico">
+        <link href="style.css" rel="stylesheet" type="text/css">	    
+       
+        <link type="text/css" rel="stylesheet" href="./renxi/default.css">
+		<script type="text/javascript" src="./renxi/jquery.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-parser.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-jit.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-builderbase.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-async.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-async-powerpack.min.js"></script>
+		<script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
+        <style type="text/css">
+          
+<!--
+.STYLE1 {color: #666666}
+-->
+        </style>
+</head>
+    <body>
+        <!--背景音乐标签-->
+		<audio autoplay="autopaly">
+			<source src="image/music.mp3" type="audio/mp3" loop="loop"/>
+		</audio>
+		<!-- 🌸飘落 -->
+		<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/sakura.js"></script>
+       
+		<div id="main">
+            <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
+             <div id="wrap">
+                <div id="text">
+			        <div id="code">
+                  <font color="#FF0000">  
+                        <span class="say" id="character">———亲爱的 悦  <br>              
+						<span class="say">
+						本来我想手写，但是现实却是好久没写字稍微尝试了下还是放弃了，要不然鬼画符一样写啥都没了感觉。</span>			
+                        <span class="say">今天是七夕节，中国人就该过自己的情人节，何况这个日子对我来说还有更多的意义。</span>
+						<span class="say">二十多年前的我在这个日子呱呱坠地，没人会想到二十多年后的我可以在这个日子里求婚，得到了属于我自己的一生所爱。</span>
+						<span class="say">我想你也肯定不会忘记，不会忘了去年今日我鼓足了全部勇气，发颤但是真诚的话语。</span>						
+						<span class="say">不对，你肯定早就忘了那晚我说了什么，你光顾着哭，肯定什么也没听清。</span>
+						<span class="say">但是，结局是好的，是的，我拥有了你。</span>
+						<span class="say">人生真的很短，2017年到现在看似短短五年，也许差不多就要占据我们后半生十分之一的时间了。</span>
+						<span class="say">回首这几年，其实我的心里百味杂陈。</span>
+						<span class="say">从一个刚毕业的毛头小子，恋爱，婚姻，甚至不远的将来会有自己的孩子。</span>
+						<span class="say">我就如同所有这个年纪的人一样，经历着这一切，既受父母的期望，也受这社会的期望，我就这样被“裹挟”着一步步向前。</span><br>
+						<span class="say">好在，那个人是你</span><br>
+						<span class="say">我期待的是一段完美的婚姻，期待的是组建一个长久幸福的家庭。好在，那个人是你！</span>
+						<span class="say">我期待着与这样的你可以携手走过未来所有的路，这条路再也不是我踽踽独行。</span>
+						<span class="say">不论何时伸开手就可以牵到一个愿意陪伴我走过未来所有酸甜苦辣，所有柴米油盐，所有希望与伤感，所有得到与失去的你。</span>
+						<span class="say">真的谢谢你</span>
+						<span class="say">我也会从一而终，好好地对你，陪你朝暮，陪你四季</span>
+						<span class="say">空间不够写不了太多，最后———</span><br>
+						<span class="say">这世界有那么多人,多幸运，我有个我们</span><br>
+						
+			  </font></p>
+      </div>
+                </div>
+           
+                <div id="clock-box">
+                    <span class="STYLE1"></span><font color="red">我喜欢你</font>
+<span class="STYLE1">已经是……</span>
+                  <div id="clock"></div>
+              </div>
+                <canvas id="canvas" width="900" height="500"></canvas>
+            </div>
+            
+        </div>
+    
+    <script>
+    </script>
+    <!--滚动标题栏-->
+    <script type=text/javascript>  
+    var title = document.title;//获取网页标题
+    var step = 0; 
+    function rollTitle() { 
+        //根据时间每次将切割后前面的字加到后面，直到step比标题个数还大，重新开始
+        document.title = title.substring(step, title.length) + title.substring(0, step); 
+        step++; 
+        if (step >  title.length) step = 0 
+        setTimeout("rollTitle()",420); //根据需求自己调整速度
+    } 
+    rollTitle();//调用函数 
+    </script>
+    <!--变色文字-->
+    <script type="text/javascript">    
+    var i=0;
+    setInterval('changeColor()',700);
+        function changeColor(){
+            var div=document.getElementById('character'); //获得div元素
+            var colorArr=['#8A2BE2','#DEB887','#7FFF00','#008B8B','#FF1493']; //建立颜色库
+            if(i==colorArr.length){ 
+                    i=0;
+                }else{
+                    div.style.color=colorArr[i++%colorArr.length]; //循环颜色
+                }
+            }
+    </script>
+
+    <script>
+    (function(){
+        var canvas = $('#canvas');
+		
+        if (!canvas[0].getContext) {
+            $("#error").show();
+            return false;        }
+
+        var width = canvas.width();
+        var height = canvas.height();        
+        canvas.attr("width", width);
+        canvas.attr("height", height);
+        var opts = {
+            seed: {
+                x: width / 2 - 20,
+                color: "rgb(190, 26, 37)",
+                scale: 2
+            },
+            branch: [
+                [535, 680, 570, 250, 500, 200, 30, 100, [
+                    [540, 500, 455, 417, 340, 400, 13, 100, [
+                        [450, 435, 434, 430, 394, 395, 2, 40]
+                    ]],
+                    [550, 445, 600, 356, 680, 345, 12, 100, [
+                        [578, 400, 648, 409, 661, 426, 3, 80]
+                    ]],
+                    [539, 281, 537, 248, 534, 217, 3, 40],
+                    [546, 397, 413, 247, 328, 244, 9, 80, [
+                        [427, 286, 383, 253, 371, 205, 2, 40],
+                        [498, 345, 435, 315, 395, 330, 4, 60]
+                    ]],
+                    [546, 357, 608, 252, 678, 221, 6, 100, [
+                        [590, 293, 646, 277, 648, 271, 2, 80]
+                    ]]
+                ]] 
+            ],
+            bloom: {
+                num: 700,
+                width: 1080,
+                height: 650,
+            },
+            footer: {
+                width: 1200,
+                height: 5,
+                speed: 10,
+            }
+        }
+
+        var tree = new Tree(canvas[0], width, height, opts);
+        var seed = tree.seed;
+        var foot = tree.footer;
+        var hold = 1;
+
+        canvas.click(function(e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            if (seed.hover(x, y)) {
+                hold = 0; 
+                canvas.unbind("click");
+                canvas.unbind("mousemove");
+                canvas.removeClass('hand');
+            }
+        }).mousemove(function(e){
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            canvas.toggleClass('hand', seed.hover(x, y));
+        });
+
+        var seedAnimate = eval(Jscex.compile("async", function () {
+            seed.draw();
+            while (hold) {
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canScale()) {
+                seed.scale(0.95);
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canMove()) {
+                seed.move(0, 2);
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+        }));
+
+        var growAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.grow();
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canGrow());
+        }));
+
+        var flowAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.flower(2);
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canFlower());
+        }));
+
+        var moveAnimate = eval(Jscex.compile("async", function () {
+            tree.snapshot("p1", 240, 0, 610, 680);
+            while (tree.move("p1", 500, 0)) {
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+            foot.draw();
+            tree.snapshot("p2", 500, 0, 610, 680);
+
+            // 会有闪烁不得意这样做, (＞﹏＜)
+            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+            canvas.css("background", "#ffe");
+            $await(Jscex.Async.sleep(300));
+            canvas.css("background", "none");
+        }));
+
+        var jumpAnimate = eval(Jscex.compile("async", function () {
+            var ctx = tree.ctx;
+            while (true) {
+                tree.ctx.clearRect(0, 0, width, height);
+                tree.jump();
+                foot.draw();
+                $await(Jscex.Async.sleep(25));
+            }
+        }));
+
+        var textAnimate = eval(Jscex.compile("async", function () {
+		    var together = new Date();
+		    together.setFullYear(2017,4 ,19); 			//时间年月日
+		    together.setHours(20);						//小时	
+		    together.setMinutes(34);					//分钟
+		    together.setSeconds(0);					//秒前一位
+		    together.setMilliseconds(0);				//秒第二位
+
+		    $("#code").show().typewriter();
+            $("#clock-box").fadeIn(500);
+            while (true) {
+                timeElapse(together);
+                $await(Jscex.Async.sleep(1000));
+            }
+        }));
+
+        var runAsync = eval(Jscex.compile("async", function () {
+            $await(seedAnimate());
+            $await(growAnimate());
+            $await(flowAnimate());
+            $await(moveAnimate());
+
+            textAnimate().start();
+
+            $await(jumpAnimate());
+        }));
+
+        runAsync().start();
+    })();
+    </script>
+</body>
+</html>
